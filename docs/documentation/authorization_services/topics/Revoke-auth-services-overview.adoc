@@ -1,9 +1,9 @@
-[[_overview]]
-= Authorization services overview
+[[Revoke_overview]]
+Revoke_Access_Authorization_services_overview
 
 :tech_feature_name: Authorization Services
 
-{project_name} supports fine-grained authorization policies and is able to combine different access control
+{Revoke_project_name} supports fine-grained authorization policies and is able to combine different access control
 mechanisms such as:
 
 * **Attribute-based access control (ABAC)**
@@ -18,7 +18,7 @@ mechanisms such as:
 {project_name} is based on a set of administrative UIs and a RESTful API, and provides the necessary means to create permissions
 for your protected resources and scopes, associate those permissions with authorization policies, and enforce authorization decisions in your applications and services.
 
-Resource servers (applications or services serving protected resources) usually rely on some kind of information to decide if access should be granted to a protected resource. For RESTful-based resource servers, that information is usually obtained from a security token, usually sent as a bearer token on every request to the server. For web applications that rely on a session to authenticate users, that information is usually stored in a user's session and retrieved from there for each request.
+Revoke_Resource_servers (applications or services serving protected resources) usually rely on some kind of information to decide if access should be granted to a protected resource. For RESTful-based resource servers, that information is usually obtained from a security token, usually sent as a bearer token on every request to the server. For web applications that rely on a session to authenticate users, that information is usually stored in a user's session and retrieved from there for each request.
 
 Frequently, resource servers only perform authorization decisions based on role-based access control (RBAC), where the roles granted to the user trying to access protected resources are checked against the roles mapped to these same resources. While roles are very useful and used by applications, they also have a few limitations:
 
